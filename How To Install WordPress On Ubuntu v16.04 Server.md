@@ -3,7 +3,8 @@ _Gryphon Strother_ - _01/12/2020_
 
 ![WordPress Graphic](http://web-13.scwebsrv.com/public_html/web105/fikret-tozak-Zk--Ydz2IAs-unsplash.jpg)
 
-Today I will show you how to fully install WordPress on your server! I will assume that **you have configured your server with a **static ip address,** that it has **SSH open,** and that it is **connected to the Internet.**
+Today I will show you how to fully install WordPress on your server! I will assume that you have configured your server with a **static ip address,** 
+that it has **SSH open,** and that it is **connected to the Internet.**
 
 
 ## Before we go any further, there are **two things you should know:**  
@@ -89,7 +90,8 @@ Then restart apache and you're done!
 
 ![Apache configured](http://web-13.scwebsrv.com/public_html/web105/apache%20success.PNG)
 
-**If you keep hitting the Default Apache Page when visiting your domain in a browser, navigate to your web root and ensure there isn't a index.html file there** _(If there is, this is the Default Apache Page that is auto loading when you visit your site. Remove or move this file elswhere to fix this.)_
+**If you keep hitting the Default Apache Page when visiting your domain in a browser, navigate to your web root and ensure there isn't a index.html file there**
+ _(If there is, this is the Default Apache Page that is auto loading when you visit your site. Remove or move this file elswhere to fix this.)_
 
 ## Now it's time to begin installing **PHP** and **MySQL**.
 #### Let's start with **MySQL**.
@@ -158,7 +160,8 @@ First, navigate to your web root and create a folder for WordPress to live in:
 
 >sudo mkdir [`wordpress folder name`]
 
-Next, we will use the curl command to download the latest WordPress files directly to our server. This can be done with a **FTP** (File Transfer Protocol) client but **running the curl command will nearly always be _much_ faster** as we will be **downloading** the files directly from the website to our server rather than **uploading** to our server from our local machine after we download them from the WordPress website.
+Next, we will use the curl command to download the latest WordPress files directly to our server. This can be done with a **FTP** (File Transfer Protocol) client but **running the curl command
+ will nearly always be _much_ faster** as we will be **downloading** the files directly from the website to our server rather than **uploading** to our server from our local machine after we download them from the WordPress website.
 
 In order to upload or download files to this directory, we first must allow read and writes: _**(run this command right below the new folder you just made as shown in the figure below)**_ 
 
